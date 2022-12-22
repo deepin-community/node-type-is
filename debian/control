@@ -1,0 +1,31 @@
+Source: node-type-is
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Yadd <yadd@debian.org>
+Testsuite: autopkgtest-pkg-nodejs
+Build-Depends:
+ debhelper-compat (= 13)
+ , node-content-type <!nocheck>
+ , node-mime-types <!nocheck>
+ , node-media-typer (>= 1.1.0) <!nocheck>
+ , mocha <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Homepage: https://github.com/jshttp/type-is
+Vcs-Git: https://salsa.debian.org/js-team/node-type-is.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-type-is
+Rules-Requires-Root: no
+
+Package: node-type-is
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , node-content-type
+ , node-mime-types
+ , node-media-typer (>= 1.1.0)
+Description: infer the content type from request
+ Contains a simple module to infer content type from
+ current request.
+ .
+ Node.js is an event-based server-side JavaScript engine.

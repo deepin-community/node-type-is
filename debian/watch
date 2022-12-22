@@ -1,0 +1,3 @@
+version=4
+opts=filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-type-is-$1/ \
+ https://github.com/jshttp/type-is/tags .*/archive/.*/v?([\d\.]+).tar.gz
